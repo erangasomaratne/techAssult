@@ -9,7 +9,7 @@ export const HomePage = () => {
             <h1>Featured Products</h1>
             <Row>
                 {
-                    products.map(product => <Col sm={12} md={6} lg={4} xl={3} key={product._id}><ProductComponent product={product} /></Col>)
+                    products.map(product => <Col className='mx-3' sm={12} md={6} lg={4} xl={3} key={product._id}><ProductComponent product={product} /></Col>)
                 }
             </Row>
         </>
